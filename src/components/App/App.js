@@ -47,6 +47,7 @@ export default function App() {
    */
   const startJoiningCall = useCallback((url) => {
     const newCallObject = DailyIframe.createCallObject();
+      console.log("url: "+  url);
     setRoomUrl(url);
     setCallObject(newCallObject);
     setAppState(STATE_JOINING);
